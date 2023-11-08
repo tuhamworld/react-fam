@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header h1 {
+  font-size: 13rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-page {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.action-btn {
+  background-color: purple;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 30px;
+  margin: 8px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.counter {
+  font-size: 90px;
+  font-weight: 800px;
+}
+
+/* Form Stylings */
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+input {
+  border: solid 1px #ccc;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  font-family: "Poppins";
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+  max-width: 200px;
+  width: 100%;
+}
+
+.hover-me{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins';
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 15px 25px;
+  width: 100%;
+  cursor: pointer;
+
 }
