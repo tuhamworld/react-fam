@@ -1,22 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 // import UserProfileCard from './components/UserProfileCard';
 // import ListComponent from './components/ListComponent';
 // import Counter from './components/counter';
+// import HoverEvent from "./components/StateEvents";
+// import Car from "./components/CarProps";
+// import CarLogo from "./components/CarProps";
+
+import { Car, CarLogo } from "./components/CarProps";
 import "./index.css";
 
 function App() {
-    const [state, setState] = useState(`Welcome to TuhamWorld`);
+  return (
+    <>
+      {/* <HoverEvent /> */}
 
-    const handleChange = (event) => {
-        setState("Mo ti arrive");
-        setTimeout(() => {
-            setState("O tun ti pada oo!");
-        }, 1000)
-    }
+      <Car brand="Tesla" color="blue" price="56454700" />
+      <Car brand="Ford" color="gold" price="12547000" />
+          <Car brand="Tesla" color="blue" price="654904980" />
+          
 
-    return <h1 onMouseOver={handleChange} className="hover-me">
-        {state}
-    </h1>;
+
+          <CarLogo logo="Pepsi"/>
+    </>
+  );
 }
 
 export default App;
