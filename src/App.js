@@ -6,22 +6,56 @@ import React from "react";
 // import Car from "./components/CarProps";
 // import CarLogo from "./components/CarProps";
 
-import { Car, CarLogo } from "./components/CarProps";
+import { Car, CarLogo, CarData, CarArrays } from "./components/CarProps";
 import "./index.css";
 
 function App() {
+
+  const carList = [{
+    brand: 'Ford',
+    year: 1993,
+    color: "silver"
+  },
+    {
+      brand: "Toyota",
+      year: 2017,
+      color: "blue"
+    },
+    {
+      brand: "Peugeot",
+      year: 2023,
+      color: "gold"
+    }]
+  
+  const listOfCars = carList.map((car) => {
+        return <CarArrays data={car} />
+  })
+
   return (
-    <>
-      {/* <HoverEvent /> */}
-
-      <Car brand="Tesla" color="blue" price="56454700" />
-      <Car brand="Ford" color="gold" price="12547000" />
-          <Car brand="Tesla" color="blue" price="654904980" />
-          
+    <div className="car">
+      
+      {/* Using Props */}
+      <CarLogo logo="Pepsi" />
 
 
-          <CarLogo logo="Pepsi"/>
-    </>
+      {/* Parsing in data from props destructuring*/}
+      <Car brand="Tesla" color="blue" year="1994" />
+      <Car brand="Ford" color="gold" year="2001" />
+
+
+      {/* Using data destructuring in data */}
+      <CarData
+        data={{
+          year: 1994,
+          color: "silver",
+        }}
+      />
+
+
+{listOfCars}
+    
+
+    </div>
   );
 }
 

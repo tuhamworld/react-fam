@@ -1,14 +1,36 @@
-import React from 'react';
+import React from "react";
 
-function Car({brand, color, price}) {
-    return <div className="car">
-        The name of my brand Car is {brand} with a {color} color and cost about ${price}.
-    </div>
-}
-
+// Using props
 function CarLogo(props) {
-    return <div> The name of CarLogo is {props.logo}</div>
+  return <div> The logo of CarLogo is {props.logo}</div>;
 }
+
+// Using Props destructuring
+function Car({ brand, color, year }) {
+  return (
+    <div className="car">
+      {brand}, {color}, {year}.    </div>
+  );
+}
+
+// Using destructuring and parsing object data in Apps
+function CarData({ data }) {
+  return (
+    <div>
+      {" "}
+      This is a Care of Model {data.year} which is {data.color} in Color{" "}
+    </div>
+  );
+}
+
+// Using Array of Cars
+
+function CarArrays({data}) {
+  return (
+    <div className="CarArrays">{data.brand}, {data.color}, {data.year}, { data.engine}</div>
+  )
+}
+
 
 // export default Car;
-export { Car, CarLogo };
+export { Car, CarLogo, CarData, CarArrays };
