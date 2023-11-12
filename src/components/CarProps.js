@@ -9,7 +9,8 @@ function CarLogo(props) {
 function Car({ brand, color, year }) {
   return (
     <div className="car">
-      {brand}, {color}, {year}.    </div>
+      {brand}, {color}, {year}.{" "}
+    </div>
   );
 }
 
@@ -25,12 +26,67 @@ function CarData({ data }) {
 
 // Using Array of Cars
 
-function CarArrays({data}) {
+function CarArrays({ data }) {
   return (
-    <div className="CarArrays">{data.brand}, {data.color}, {data.year}, { data.engine}</div>
-  )
+    <div className="CarArrays">
+      {data.brand}, {data.color}, {data.year}, {data.engine}
+    </div>
+  );
 }
 
+
+
+// Below is the code to show on App
+
+// function App() {
+//   const carList = [
+//     {
+//       brand: "Ford",
+//       year: 1993,
+//       color: "silver",
+//     },
+//     {
+//       brand: "Toyota",
+//       year: 2017,
+//       color: "blue",
+//     },
+//     {
+//       brand: "Peugeot",
+//       year: 2023,
+//       color: "gold",
+//     },
+//     {
+//       brand: "BMW",
+//       year: 2022,
+//       color: "diamond"
+//     }
+//   ];
+
+//   const listOfCars = carList.map((car) => {
+//     return <CarArrays data={car} />;
+//   });
+
+//   return (
+//     <div className="car">
+//       {/* Using Props */}
+//       <CarLogo logo="Pepsi" />
+
+//       {/* Parsing in data from props destructuring*/}
+//       <Car brand="Tesla" color="blue" year="1994" />
+//       <Car brand="Ford" color="gold" year="2001" />
+
+//       {/* Using data destructuring in data */}
+//       <CarData
+//         data={{
+//           year: 1994,
+//           color: "silver",
+//         }}
+//       />
+
+//       {listOfCars}
+//     </div>
+//   );
+// }
 
 // export default Car;
 export { Car, CarLogo, CarData, CarArrays };
