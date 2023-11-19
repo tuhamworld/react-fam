@@ -9,12 +9,13 @@ import React, { useEffect, useState } from "react";
 // import { Loader, Content } from "./components/ConditionalRendering";
 
 import UseEffect from "./components/UseEffectHook";
+import UseState from "./components/UseState";
 
 import "./index.css";
 
 function App() {
   return (
-  <UseEffect/>
+  <UseState/>
 )
 
 }
