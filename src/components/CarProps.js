@@ -34,8 +34,6 @@ function CarArrays({ data }) {
   );
 }
 
-
-
 // Below is the code to show on App
 
 // function App() {

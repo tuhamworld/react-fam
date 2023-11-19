@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const handleChange = (event) => {
-  console.log('Value: ', event.target.value);
-}
+  console.log("Value: ", event.target.value);
+};
 
 function formElement() {
-    <section className="form-container">
-      <form action="#">
-      <input onChange ={handleChange}
+  <section className="form-container">
+    <form action="#">
+      <input
+        onChange={handleChange}
         type="text"
         name="name"
         id="name"
@@ -27,7 +28,7 @@ function formElement() {
       />
       <button type="submit">Submit</button>
     </form>
-    </section>
-};
+  </section>;
+}
 
 export default formElement;
