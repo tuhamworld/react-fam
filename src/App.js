@@ -7,15 +7,18 @@ import React, { useEffect, useState } from "react";
 // import CarLogo from "./components/CarProps";
 // import { Car, CarLogo, CarData, CarArrays } from "./components/CarProps";
 // import { Loader, Content } from "./components/ConditionalRendering";
-
 // import UseEffect from "./components/UseEffectHook";
-import UseState from "./components/UseState";
+// import UseState from "./components/UseState";
+import UseContext from "./components/UseContext";
 
 import "./index.css";
 
 function App() {
   return (
-  <UseState/>
+    <div className="main-page">
+   
+
+  </div>
 )
 
 }
