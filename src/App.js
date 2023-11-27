@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import {BrowserRouter as Router, Router, Switch} from "react-router-dom"
 // import UserProfileCard from './components/UserProfileCard';
 // import ListComponent from './components/ListComponent';
 // import Counter from './components/counter';
