@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+//for mobile devices
+@mixin mobile-media-query {
+  @media ((min-width: $mobile-min) and (max-width: $mobile-max)) {
+    @content;
+  }
+}
+
+//for tablet and ipad devices
+@mixin tablet-media-query {
+  @media ((min-width: $tablet-min) and (max-width: $tablet-max)) {
+    @content;
+  }
+}
+
+//for small laptop screens
+@mixin sm-laptop-media-query {
+  @media ((min-width: $sm-laptop-min) and (max-width: $sm-laptop-max)) {
+    @content;
+  }
+}
+
+//for large laptop screens
+@mixin sm-laptop-media-query {
+  @media ((min-width: $lg-desktop-min) and (max-width: $lg-desktop-max)) {
+    @content;
+  }
+}
+
+//for large laptop screens
+@mixin sm-laptop-media-query {
+  @media ((min-width: $extra-lg-desktop-min)) {
+    @content;
+  }
+}
+
+//custom media query
+@mixin custom-media-query($min-value, $max-value) {
+  @media ((min-width: $min-value) and (max-width:$max-value)) {
+    @content;
+  }
+}

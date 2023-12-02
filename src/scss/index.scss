@@ -1,0 +1,27 @@
+//Abstract Folder
+@import "./abstract/functions";
+@import "./abstract/mixins";
+
+//For Base Folder
+@import "./base/reset";
+@import "./base/variables";
+
+//For Components Folder
+@import "./components/button";
+@import "./components/footer";
+
+// For Layout Folder
+@import "./layout/auth";
+@import "./layout/dashboard";
+
+//For Pages Folder
+@import "./pages/about";
+@import "./pages//contact";
+
+//For Theme Folder
+@import "./theme/dark";
+
+//For Vender Folder
+@import "./vendor/bootstrap";
+@import "./vendor/owl-carousel";
+@import "./vendor/tailwind";
