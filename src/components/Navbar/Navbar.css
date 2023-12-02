@@ -1,0 +1,30 @@
+body {
+    font-family: Poppins;
+}
+
+.navbar{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+.navbar--style{
+        max-width: 900px;
+        width: 100%;
+      border: solid 1px gray;
+      justify-content: center;
+}

@@ -116,3 +116,10 @@ button {
   padding: 5px;
   color: #000;
 }
+
+.box{
+  border:solid 1px gray;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem;
+}
