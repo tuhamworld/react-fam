@@ -5,13 +5,13 @@
 //For Base Folder
 @import "./base/reset";
 @import "./base/variables";
+@import "./base/typography";
 
 //For Components Folder
 @import "./components/button";
 @import "./components/footer";
 
 // For Layout Folder
-@import "./layout/auth";
 @import "./layout/dashboard";
 
 //For Pages Folder

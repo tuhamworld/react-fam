@@ -2,6 +2,10 @@ body {
     font-family: Poppins;
 }
 
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navbar{
     max-width: 600px;
     width: 100%;

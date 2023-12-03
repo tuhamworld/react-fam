@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/molecules/Navbar/Navbar";
 // import UserProfileCard from './components/UserProfileCard';
 // import ListComponent from './components/ListComponent';
 // import Counter from './components/counter';
@@ -16,7 +16,8 @@ import Navbar from "./components/Navbar/Navbar";
 // import DisplayResults from "./hooks/UseContext"
 
 import "./index.css";
-import "./components/Navbar/Navbar.css"
+import "./assets/styles/main.css"
+import "./components/molecules/Navbar/Navbar.css"
 
 function App() {
   return (
