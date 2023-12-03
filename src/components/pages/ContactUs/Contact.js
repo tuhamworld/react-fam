@@ -1,6 +1,6 @@
 import React from "react";
-import About from "./About"
-import App from "../../App"
+import About from "../AboutUs/About"
+import App from "../../../App"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function Contact() {

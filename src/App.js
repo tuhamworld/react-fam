@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
+import About from "./components/pages/AboutUs/About";
+import Contact from "./components/pages/ContactUs/Contact";
 import Navbar from "./components/molecules/Navbar/Navbar";
 // import UserProfileCard from './components/UserProfileCard';
 // import ListComponent from './components/ListComponent';
