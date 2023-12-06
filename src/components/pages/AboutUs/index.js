@@ -1,5 +1,25 @@
+import { Link } from "react-router-dom";
+
 export const AboutUs = () => {
-    return (
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/registration">Registration</Link>
+          </li>
+        </ul>
+      </nav>
+
       <section>
         <h1>Welcome to the About Us Page</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
@@ -13,6 +33,7 @@ export const AboutUs = () => {
         quibusdam unde cum! Molestias, saepe sit. Voluptas, perferendis odio
         architecto praesentium error dolorum.
       </section>
+    </>  
     );
   };
   
