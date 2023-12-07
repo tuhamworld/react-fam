@@ -5,7 +5,8 @@ import "./assets/styles/main.css";
 import {LandingPage} from "./components/pages/LandingPage";
 import {AboutUs} from "./components/pages/AboutUs";
 import {ContactUs} from "./components/pages/ContactUs";
-import {Registration} from "./components/pages/Registration";
+import { Registration } from "./components/pages/Registration";
+import { RouterHooks } from "./components/pages/RouterHooks";
 
 // import { Car, CarLogo, CarData, CarArrays } from "./components/CarProps";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/registration" element={<Registration/>} />
+        <Route path="/router-hooks" element={<RouterHooks/>} />
         
     </Routes>
     </div>
