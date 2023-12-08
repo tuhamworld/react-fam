@@ -18,6 +18,15 @@ export const LandingPage = () => {
             <Link to="/registration">Registration</Link>
           </li>
           <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/users">Users</Link>
+          </li>
+          <li>
+            <Link to="/users/8rnfrjfnrfj/details">User Details</Link>
+          </li>
+          <li>
             <Link to="/custom-hooks">Custom Hooks</Link>
           </li>
         </ul>

@@ -1,3 +1,3 @@
 ## This is helper functions
 
-For formatting data., abbrevating date, etc.
+For formatting data, abbreviating date, agregate links, etc
