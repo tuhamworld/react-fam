@@ -24,7 +24,7 @@ export const LandingPage = () => {
             <Link to="/users">Users</Link>
           </li>
           <li>
-            <Link to="/users/8rnfrjfnrfj/details">User Details</Link>
+            <Link to="/users/8rnfrjfnrfj/details?name=tuham&email=example@gmail.com">User Details</Link>
           </li>
           <li>
             <Link to="/custom-hooks">Custom Hooks</Link>

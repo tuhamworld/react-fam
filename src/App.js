@@ -21,11 +21,14 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="*" element={<h1>404 Error</h1>} />
         <Route path="/router-hooks" element={<RouterHooks />} />
         <Route path="/dashboard" element={ <Dashboard /> } />
         <Route path="/users" element={ <Users /> } />
-        <Route path="/users/:userId/details" element={ <UserDetails /> } />
-        <Route path="*" element={<h1>404 Error</h1>} />
+        <Route path="/users/:userId/details" element={<UserDetails />} />
+
+        {/* <Route path="/:userName/status/:tweetId" element={<Twitter Sample />} /> */}
+        
       </Routes>
     </div>
   );
