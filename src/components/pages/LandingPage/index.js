@@ -21,6 +21,9 @@ export const LandingPage = () => {
             <Link to="/dashboard">Dashboard</Link>
           </li>
           <li>
+            <Link to="/dashboard-form">Dashboard Form</Link>
+          </li>
+          <li>
             <Link to="/users">Users</Link>
           </li>
           <li>
