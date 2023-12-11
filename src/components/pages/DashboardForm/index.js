@@ -1,22 +1,28 @@
 import { useState } from "react";
 
-export const DashboardForm = () => {
-  const [state, setState] = useState({
-    firstname: "",
-    lastname: "",
-    emailAddress: "",
-    homeAaddress: "",
-  });
+// Initial States
+const INITIAL_STATE = {
+  firstname: "",
+  lastname: "",
+  emailAddress: "",
+  homeAddress: "",
+}
 
+export const DashboardForm = () => {
+  // State hooks for Initial State
+  const [state, setState] = useState(INITIAL_STATE);
+
+  // Handling User Inputs
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setState({...state, [name]: value})
+    setState({ ...state, [name]: value });
   };
 
-
-  const handleFormSubmission = () => {
-  console.log(state)  
-  }
+  // Handling Form submissions
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    console.log(state);
+  };
 
   return (
     <section>
@@ -50,13 +56,15 @@ export const DashboardForm = () => {
 
         <label htmlFor="address">Home Address:</label>
         <textarea
-          name="homeAaddress"
+          name="homeAddress"
           cols="30"
           rows="10"
           id="address"
           onChange={handleInputChange}
         />
-        <button type="submit" onClick={handleFormSubmission}>Submit</button>
+        <button type="submit" onClick={handleFormSubmission}>
+          Submit
+        </button>
       </form>
     </section>
   );
