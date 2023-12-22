@@ -15,6 +15,9 @@ export const LandingPage = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
+            <Link to="/pagination">Pagination</Link>
+          </li>
+          <li>
             <Link to="/registration">Registration</Link>
           </li>
           <li>
