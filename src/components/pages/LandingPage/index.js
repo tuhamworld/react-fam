@@ -18,6 +18,9 @@ export const LandingPage = () => {
             <Link to="/pagination">Pagination</Link>
           </li>
           <li>
+            <Link to="/lazyloading">Lazy Loading</Link>
+          </li>
+          <li>
             <Link to="/registration">Registration</Link>
           </li>
           <li>
@@ -30,7 +33,9 @@ export const LandingPage = () => {
             <Link to="/users">Users</Link>
           </li>
           <li>
-            <Link to="/users/8rnfrjfnrfj/details?name=tuham&email=example@gmail.com">User Details</Link>
+            <Link to="/users/8rnfrjfnrfj/details?name=tuham&email=example@gmail.com">
+              User Details
+            </Link>
           </li>
           <li>
             <Link to="/custom-hooks">Custom Hooks</Link>
