@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
     <section>
@@ -16,3 +16,5 @@ export const Dashboard = () => {
     </section>
   );
 };
+
+export default Dashboard;

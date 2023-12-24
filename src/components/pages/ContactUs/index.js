@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const ContactUs = () => {
+const ContactUs = () => {
   return (
     <>
       <nav>
@@ -35,3 +35,5 @@ export const ContactUs = () => {
     </>
   );
 };
+
+export default ContactUs;

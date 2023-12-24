@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
+import "./index.scss";
+import tuham_logo from "../../../assets/images/svgs/tuham-logo.svg";
 
-export const LandingPage = () => {
+const Home = () => {
   return (
     <>
       <nav>
+
+        <div>
+          <img src={tuham_logo} alt="" width="150px"/>
+        </div>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -59,3 +65,5 @@ export const LandingPage = () => {
     </>
   );
 };
+
+export default Home;

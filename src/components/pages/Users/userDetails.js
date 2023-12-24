@@ -1,6 +1,6 @@
 import { useParams, useSearchParams } from "react-router-dom"
 
-export const UserDetails = () => {
+const UserDetails = () => {
     const { userId } = useParams();
     const  [searchParams] = useSearchParams();
     return (
@@ -14,3 +14,4 @@ export const UserDetails = () => {
         </section>
     )
 }
+export default UserDetails;

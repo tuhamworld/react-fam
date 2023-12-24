@@ -8,7 +8,7 @@ const INITIAL_STATE = {
   homeAddress: "",
 }
 
-export const DashboardForm = () => {
+const DashboardForm = () => {
   // State hooks for Initial State
   const [state, setState] = useState(INITIAL_STATE);
 
@@ -69,3 +69,5 @@ export const DashboardForm = () => {
     </section>
   );
 };
+
+export default DashboardForm;

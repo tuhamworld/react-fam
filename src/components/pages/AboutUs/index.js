@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const AboutUs = () => {
+const AboutUs = () => {
   return (
     <>
       <nav>
@@ -37,3 +37,4 @@ export const AboutUs = () => {
     );
   };
   
+export default AboutUs;
