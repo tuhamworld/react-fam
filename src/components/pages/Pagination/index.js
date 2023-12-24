@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
 
-export const Pagination = () => {
+const Pagination = () => {
   // Setting up our state
   const [currentPosition, setCurrentPosition] = useState(0);
   const [news, setNews] = useState(null);
@@ -93,3 +93,6 @@ export const Pagination = () => {
     </>
   );
 };
+
+
+export default Pagination;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Registration = () => {
+const Registration = () => {
   return (
     <>
       <nav>
@@ -35,3 +35,5 @@ export const Registration = () => {
     </>
   );
 };
+
+export default Registration;

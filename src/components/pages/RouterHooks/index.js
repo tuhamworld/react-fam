@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import "../../../index.css"
 
-export const RouterHooks = () => {
+const RouterHooks = () => {
     // useSearchParams is an hook for search query paramater (e.g ?search=react)
   const [searchParams, setSearchParams] = useSearchParams();
     console.log(searchParams.get("search"));
@@ -59,3 +59,5 @@ export const RouterHooks = () => {
     </>
   );
 };
+
+export default RouterHooks;

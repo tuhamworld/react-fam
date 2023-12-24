@@ -1,4 +1,4 @@
-export const Users = () => {
+const Users = () => {
   return (
     <section>
       <h1>This is a User</h1>
@@ -14,3 +14,5 @@ export const Users = () => {
     </section>
   );
 };
+
+export default Users;
