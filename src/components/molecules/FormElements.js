@@ -4,7 +4,7 @@ const handleChange = (event) => {
   console.log("Value: ", event.target.value);
 };
 
-function formElement() {
+const formElement = () => {
   <section className="form-container">
     <form action="#">
       <input
@@ -29,6 +29,6 @@ function formElement() {
       <button type="submit">Submit</button>
     </form>
   </section>;
-}
+};
 
 export default formElement;

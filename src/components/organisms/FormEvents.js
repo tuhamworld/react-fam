@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormEvents() {
+const FormEvents = () => {
   return (
     <section className="form-container">
       <form
@@ -36,6 +36,6 @@ function FormEvents() {
       </form>
     </section>
   );
-}
+};
 
 export default FormEvents();

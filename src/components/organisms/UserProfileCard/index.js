@@ -1,7 +1,7 @@
 import Avatar from "../../molecules/Avatar";
 import "./index.scss";
 
-function UserProfileCard() {
+const UserProfileCard = () => {
   return (
     <>
       <div className="card">
@@ -11,6 +11,6 @@ function UserProfileCard() {
       </div>
     </>
   );
-}
+};
 
 export default UserProfileCard;

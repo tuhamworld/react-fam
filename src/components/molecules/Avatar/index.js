@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-function Avatar() {
+const Avatar = () => {
   return (
     <>
       <img
@@ -13,6 +13,6 @@ function Avatar() {
       />
     </>
   );
-}
+};
 
 export default Avatar;

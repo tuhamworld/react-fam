@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../index.css";
 
-function HoverEvent() {
+const HoverEvent = () => {
   const [state, setState] = useState(`Welcome to TuhamWorld`);
 
   const handleChange = (event) => {
@@ -16,6 +16,6 @@ function HoverEvent() {
       {state}
     </h1>
   );
-}
+};
 
 export default HoverEvent;

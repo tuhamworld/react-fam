@@ -3,11 +3,23 @@ import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import "./assets/styles/main.css";
 // import { Home } from "./components/pages/Home";
-import { AboutUs, ContactUs, Dashboard, DashboardForm, Home, LazyLoading, Pagination, Registration, RouterHooks, UserDetails, Users } from "./components/pages";
+import {
+  AboutUs,
+  ContactUs,
+  Dashboard,
+  DashboardForm,
+  Home,
+  LazyLoading,
+  Pagination,
+  Registration,
+  RouterHooks,
+  UserDetails,
+  Users,
+} from "./components/pages";
 
 // import { Car, CarLogo, CarData, CarArrays } from "./components/CarProps";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Routes>
@@ -28,5 +40,5 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 export default App;
