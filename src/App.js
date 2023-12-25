@@ -41,6 +41,7 @@ const App = () => {
 
         {/* <Route path="/:userName/status/:tweetId" element={<Twitter Sample />} /> */}
       </Routes>
+
     </div>
   );
 };

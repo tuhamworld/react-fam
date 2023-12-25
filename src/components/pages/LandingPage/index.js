@@ -1,16 +1,13 @@
 import React from "react";
 import Avatar from "../../molecules/Avatar";
-import tuham_logo from "../../../assets/images/svgs/tuham-logo.svg";
 import { Link } from "react-router-dom";
 import tunde_pic from "../../../assets/images/jpgs/tunde-sanusi.jpg";
+import "./index.scss";
 
 const LandingPage = () => {
   return (
     <>
       <nav>
-        <div>
-          <img src={tuham_logo} alt="" width="150px" />
-        </div>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -53,7 +50,7 @@ const LandingPage = () => {
         </ul>
       </nav>
 
-      <section>
+      <section className="main-page">
         <div>
           <Avatar src={tunde_pic} alt="Tunde" />
         </div>
