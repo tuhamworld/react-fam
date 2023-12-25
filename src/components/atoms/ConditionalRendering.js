@@ -1,10 +1,10 @@
 import React from "react";
 
-function Loader() {
+const Loader = () => {
   return <div className="Loader">Loading...</div>;
 }
 
-function Content() {
+const Content = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   setTimeout(() => {

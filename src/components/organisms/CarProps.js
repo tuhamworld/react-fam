@@ -1,12 +1,12 @@
 import React from "react";
 
 // Using props
-function CarLogo(props) {
+const CarLogo = (props)=> {
   return <div> The logo of CarLogo is {props.logo}</div>;
 }
 
 // Using Props destructuring
-function Car({ brand, color, year }) {
+const  Car = ({ brand, color, year }) => {
   return (
     <div className="car">
       {brand}, {color}, {year}.{" "}
@@ -15,7 +15,7 @@ function Car({ brand, color, year }) {
 }
 
 // Using destructuring and parsing object data in Apps
-function CarData({ data }) {
+const CarData = ({ data }) => {
   return (
     <div>
       {" "}
@@ -26,7 +26,7 @@ function CarData({ data }) {
 
 // Using Array of Cars
 
-function CarArrays({ data }) {
+const CarArrays = ({ data }) => {
   return (
     <div className="CarArrays">
       {data.brand}, {data.color}, {data.year}, {data.engine}

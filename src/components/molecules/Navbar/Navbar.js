@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div className="navbar navbar--style">
       <h2>Tuham Sample Site</h2>
@@ -18,6 +18,6 @@ function Navbar() {
       </ul>
     </div>
   );
-}
+};
 
 export default Navbar;

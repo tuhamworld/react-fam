@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../index.css";
 
-function Counter() {
+const Counter = () => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = (event) => {
@@ -25,6 +25,6 @@ function Counter() {
       </button>
     </section>
   );
-}
+};
 
 export default Counter;
