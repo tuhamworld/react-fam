@@ -5,6 +5,7 @@ export { default as ContactUs } from "./ContactUs";
 export { default as Dashboard } from "./Dashboard";
 export { default as DashboardForm } from "./DashboardForm";
 export { default as Home } from "./Home";
+export {default as LandingPage } from "./LandingPage"
 export {default as LazyLoading} from "./LazyLoading"
 export { default as Pagination } from "./Pagination";
 export { default as Registration } from "./Registration";

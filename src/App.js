@@ -9,6 +9,7 @@ import {
   Dashboard,
   DashboardForm,
   Home,
+  LandingPage,
   LazyLoading,
   Pagination,
   Registration,
@@ -23,10 +24,12 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/pagination" element={<Pagination />} />
+        <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/lazyloading" element={<LazyLoading />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<h1>404 Error</h1>} />
