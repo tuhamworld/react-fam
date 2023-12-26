@@ -1,54 +1,15 @@
 import React from "react";
 import Avatar from "../../molecules/Avatar";
-import { Link } from "react-router-dom";
 import tunde_pic from "../../../assets/images/jpgs/tunde-sanusi.jpg";
+import tuham_logo from "../../../assets/images/svgs/tuham-logo.svg";
 import "./index.scss";
 
 const LandingPage = () => {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/pagination">Pagination</Link>
-          </li>
-          <li>
-            <Link to="/landing-page">Landing Page</Link>
-          </li>
-          <li>
-            <Link to="/lazyloading">Lazy Loading</Link>
-          </li>
-          <li>
-            <Link to="/registration">Registration</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/dashboard-form">Dashboard Form</Link>
-          </li>
-          <li>
-            <Link to="/users">Users</Link>
-          </li>
-          <li>
-            <Link to="/users/8rnfrjfnrfj/details?name=tuham&email=example@gmail.com">
-              User Details
-            </Link>
-          </li>
-          <li>
-            <Link to="/custom-hooks">Custom Hooks</Link>
-          </li>
-        </ul>
-      </nav>
+<img src={tuham_logo} alt="" width="200px" />
+       </nav>
 
       <section className="main-page">
         <div>

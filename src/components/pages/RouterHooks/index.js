@@ -1,10 +1,11 @@
-import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
+// import { Link, useLocation, useNavigate,  useSearchParams } from "react-router-dom"; - Original
 import "../../../index.css"
 
 const RouterHooks = () => {
     // useSearchParams is an hook for search query paramater (e.g ?search=react)
-  const [searchParams, setSearchParams] = useSearchParams();
-    console.log(searchParams.get("search"));
+  // const [searchParams, setSearchParams] = useSearchParams();
+    // console.log(searchParams.get("search"));
     
     // Use Location is an hook for showing the location
     const location = useLocation();

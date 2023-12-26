@@ -18,7 +18,6 @@ import {
   Users,
 } from "./components/pages";
 
-// import { Car, CarLogo, CarData, CarArrays } from "./components/CarProps";
 
 const App = () => {
   return (
