@@ -1,11 +1,12 @@
 import React from "react";
 import "./index.scss";
+import tuham_image from "../../../assets/images/jpgs/tunde-sanusi.jpg";
 
-const Avatar = () => (
+const Avatar = ({src={tuham_image}, alt="Profile-image"}) => (
   <img
     className="card-image"
-    src="https://w3schools.com/howto/img_avatar.png"
-    alt="user_avatar"
+    src={src}
+    alt={alt}
     width="200px"
     height="200px"
   />

@@ -1,0 +1,11 @@
+.main-page {
+  /* From https://css.glass */
+  background: rgba(234, 81, 95, 0.91);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(234, 81, 95, 0.37);
+  padding: 2rem 5rem;
+  color: #fff;
+}
