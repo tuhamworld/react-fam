@@ -14,6 +14,7 @@ import {
   Pagination,
   Registration,
   RouterHooks,
+  Todo,
   UserDetails,
   Users,
 } from "./components/pages";
@@ -23,18 +24,20 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/" element={<LandingPage />} /> */}
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/pagination" element={<Pagination />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard-form" element={<DashboardForm />} />
         <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/lazyloading" element={<LazyLoading />} />
+        <Route path="/pagination" element={<Pagination />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<h1>404 Error</h1>} />
         <Route path="/router-hooks" element={<RouterHooks />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard-form" element={<DashboardForm />} />
+        <Route path="/todo" element={<Todo />} />
+        
         <Route path="/users" element={<Users />} />
         <Route path="/users/:userId/details" element={<UserDetails />} />
 
