@@ -14,13 +14,14 @@ const Todo = () => {
 
     const handleAddNewTodo = (event) => {
         event.preventDefault();
-        setTodos([...todos, { id: todos.length+1, todo: newTodo }])
+        setTodos([...todos, { id: todos.length + 2, todo: newTodo }])
         // console.log(todos)
     }
     
     const handleDeleteTodo = (id) => {
         const result = todos.filter((todo) => todo.id !== id)
-        setTodos(result)
+      setTodos(result)
+  
     }
   return (
     <section>
@@ -39,7 +40,7 @@ const Todo = () => {
               {todos?.map(({ id, todo }) => (
             <Fragment key={id}>
                       <li key={id}> {todo}
-                      <span onClick={()=> handleDeleteTodo (id)}>&nbsp; &nbsp; x </span></li> 
+                      <span style={{cursor: 'pointer'}} onClick={()=> handleDeleteTodo (id)} >&nbsp; &nbsp; x </span></li> 
                       
             </Fragment>
         ))}

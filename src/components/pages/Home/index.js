@@ -1,14 +1,35 @@
 import { Link } from "react-router-dom";
 import "./index.scss";
 import tuham_logo from "../../../assets/images/svgs/tuham-logo.svg";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+
+  //  ............ Fires when the component mounts, when the state changes, and on cleanup
+  // useEffect(() => {
+  //   console.log("No dependency array");
+  //   setIsLoggedIn(true)
+  // });
+
+
+  // .............. fire when the component mounts and when the state changes
+  useEffect(() => {
+    console.log("Dependency array with Empty parameter");
+    setIsLoggedIn(true);
+  }, []);
+
+  // ........Fire when the component mountsm and trigger subsequently when the parameter changes
+  // useEffect(() => {
+  //   console.log("Dependency Array with parameter");
+  // }, [isLoggedIn]);
+
   return (
     <>
       <nav>
-
         <div>
-          <img src={tuham_logo} alt="" width="150px"/>
+          <img src={tuham_logo} alt="" width="150px" />
         </div>
         <ul>
           <li>

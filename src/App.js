@@ -15,6 +15,7 @@ import {
   Registration,
   RouterHooks,
   Todo,
+  UseEffect,
   UserDetails,
   Users,
 } from "./components/pages";
@@ -37,7 +38,7 @@ const App = () => {
         <Route path="*" element={<h1>404 Error</h1>} />
         <Route path="/router-hooks" element={<RouterHooks />} />
         <Route path="/todo" element={<Todo />} />
-        
+        <Route path="/use-effect" element={<UseEffect />} />
         <Route path="/users" element={<Users />} />
         <Route path="/users/:userId/details" element={<UserDetails />} />
 
