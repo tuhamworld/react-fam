@@ -1,9 +1,9 @@
-import React, { useId, useState } from "react";
+import React, { Fragment, useState } from "react";
+import "./index.scss";
 
 const Todo = () => {
-  const todoId = useId();
   const [todos, setTodos] = useState([
-    { id: todoId, todo: "Wake up and observe Solat" },
+    { id: 1, todo: "Wake up and observe Solat" },
   ]);
 
     const [newTodo, setNewTodo] = useState("");
@@ -14,8 +14,14 @@ const Todo = () => {
 
     const handleAddNewTodo = (event) => {
         event.preventDefault();
-        setTodos([...todos, {id:todoId, todo: newTodo} ])
-   }
+        setTodos([...todos, { id: todos.length+1, todo: newTodo }])
+        // console.log(todos)
+    }
+    
+    const handleDeleteTodo = (id) => {
+        const result = todos.filter((todo) => todo.id !== id)
+        setTodos(result)
+    }
   return (
     <section>
       <form>
@@ -30,8 +36,12 @@ const Todo = () => {
       </form>
 
       <ul>
-        {todos?.map(({ id, todo }) => (
-          <li key={id}> {todo} </li>
+              {todos?.map(({ id, todo }) => (
+            <Fragment key={id}>
+                      <li key={id}> {todo}
+                      <span onClick={()=> handleDeleteTodo (id)}>&nbsp; &nbsp; x </span></li> 
+                      
+            </Fragment>
         ))}
       </ul>
     </section>
