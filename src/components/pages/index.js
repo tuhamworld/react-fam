@@ -10,6 +10,7 @@ export {default as LazyLoading} from "./LazyLoading"
 export { default as Pagination } from "./Pagination";
 export { default as Registration } from "./Registration";
 export { default as RouterHooks } from "./RouterHooks";
+export { default as UseEffect } from "./UseEffect";
 export { default as Users } from "./Users";
 export { default as UserDetails } from "./Users";
 export { default as Todo } from "./Todo";
