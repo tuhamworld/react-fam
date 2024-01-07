@@ -5,10 +5,10 @@ import "./assets/styles/main.css";
 // import { Home } from "./components/pages/Home";
 import {
   AboutUs,
+  Albums,
   ContactUs,
   Dashboard,
   DashboardForm,
-  Home,
   LandingPage,
   LazyLoading,
   Pagination,
@@ -26,7 +26,7 @@ const App = () => {
     <div>
       <Routes>
         {/* <Route path="/" element={<LandingPage />} /> */}
-        <Route path="/home" element={<Home />} />
+        <Route path="/albums" element={<Albums />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/dashboard" element={<Dashboard />} />
