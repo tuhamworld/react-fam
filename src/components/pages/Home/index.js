@@ -4,26 +4,24 @@ import tuham_logo from "../../../assets/images/svgs/tuham-logo.svg";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [albums, setAlbums] = useState([]);
 
-
-  //  ............ Fires when the component mounts, when the state changes, and on cleanup
-  // useEffect(() => {
-  //   console.log("No dependency array");
-  //   setIsLoggedIn(true)
-  // });
-
-
-  // .............. fire when the component mounts and when the state changes
   useEffect(() => {
-    console.log("Dependency array with Empty parameter");
-    setIsLoggedIn(true);
-  }, []);
+    const handleFetchAlbums = async () => {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/albums"
+        );
+        const allAlbums = await response.json();
+        //  console.log(allAlbums)
+        setAlbums(allAlbums);
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
-  // ........Fire when the component mountsm and trigger subsequently when the parameter changes
-  // useEffect(() => {
-  //   console.log("Dependency Array with parameter");
-  // }, [isLoggedIn]);
+    handleFetchAlbums();
+  }, []);
 
   return (
     <>
@@ -35,12 +33,12 @@ const Home = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/pagination">Pagination</Link>
           </li>
@@ -50,20 +48,20 @@ const Home = () => {
           <li>
             <Link to="/registration">Registration</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/dashboard">Dashboard</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/dashboard-form">Dashboard Form</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/users">Users</Link>
           </li>
           <li>
             <Link to="/users/8rnfrjfnrfj/details?name=tuham&email=example@gmail.com">
               User Details
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/custom-hooks">Custom Hooks</Link>
           </li>
@@ -71,17 +69,18 @@ const Home = () => {
       </nav>
 
       <section>
-        <h1>Welcome to the Landing Page</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-        nesciunt, nihil fugiat illum tempore temporibus esse laudantium, aperiam
-        facilis ab dicta magnam minus assumenda eveniet a, vitae odio quae
-        nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-        optio, deleniti, asperiores autem accusamus voluptatum ut quidem
-        accusantium recusandae quas consequatur molestias? Et sequi minima
-        numquam, veritatis aspernatur voluptatum alias. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Nam vitae eaque ducimus amet suscipit
-        sequi eos, magni quibusdam unde cum! Molestias, saepe sit. Voluptas,
-        perferendis odio architecto praesentium error dolorum.
+        <h1>Peep all our albums</h1>
+        <ul>
+          {
+            albums?.map((album) => (
+              <li key={album.id}>
+                <Link to={`/album/${album.id}`}>{album.title }</Link>
+              </li>
+
+            ))
+          }
+     </ul>
+        
       </section>
     </>
   );
